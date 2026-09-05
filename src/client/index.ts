@@ -167,7 +167,7 @@ function SessionLockDock({ sessionId }: { sessionId?: string }): React.ReactElem
         alignItems: 'center',
         gap: '6px',
         fontSize: '11px',
-        color: 'var(--theme-text-tertiary, #999)',
+        color: 'var(--dsw-alias-label-secondary, #666)',
         padding: '2px 6px 0',
         opacity: phase === 'locked' ? 0.85 : 0.4,
         transition: 'opacity .25s',
@@ -177,6 +177,8 @@ function SessionLockDock({ sessionId }: { sessionId?: string }): React.ReactElem
   }
 
   // blocked：另一标签页持有锁 → 警告横幅 + 接管按钮。
+  // 颜色全部用 dsh 主题变量（明暗模式自动适配）：文字用主文字色，
+  // 背景用警告色低透明混合，边框用警告色。
   return React.createElement(
     'div',
     {
@@ -189,9 +191,9 @@ function SessionLockDock({ sessionId }: { sessionId?: string }): React.ReactElem
         padding: '8px 12px',
         margin: '6px 6px 2px',
         borderRadius: '8px',
-        border: '1px solid var(--theme-border-warning, #f0c36a)',
-        background: 'var(--theme-bg-warning, rgba(240, 195, 106, 0.12))',
-        color: 'var(--theme-text-primary, #eee)',
+        border: '1px solid var(--dsw-alias-state-warn-primary, #b8860b)',
+        background: 'color-mix(in srgb, var(--dsw-alias-state-warn-primary, #ffc107) 13%, transparent)',
+        color: 'var(--dsw-alias-label-primary, #333)',
         fontSize: '12.5px',
         lineHeight: 1.5,
       },
@@ -210,9 +212,9 @@ function SessionLockDock({ sessionId }: { sessionId?: string }): React.ReactElem
           flexShrink: 0,
           padding: '5px 12px',
           borderRadius: '6px',
-          border: '1px solid var(--theme-border, #666)',
+          border: '1px solid var(--dsw-alias-border-l2, #999)',
           background: 'transparent',
-          color: 'inherit',
+          color: 'var(--dsw-alias-label-primary, #333)',
           cursor: 'pointer',
           fontSize: '12px',
         },
