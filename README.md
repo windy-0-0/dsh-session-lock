@@ -20,11 +20,7 @@ npm install @dsh-external/dsh-session-lock
 
 然后把它加入你的 profile bundles（`dsh.plugin add @dsh-external/dsh-session-lock`，或手动把包名加进 profile `package.json` 的 `dsh.profile.bundles` 数组），重启 dsh 生效。
 
-或使用 dsh-super-injector 免重启热装配：
-
-```bash
-npx dsh-injector inject /path/to/dsh-session-lock
-```
+如果使用 dsh-super-injector 生态（免重启热装配），在其环境中调用 `dev_inject_plugin <本插件目录>` 即可。
 
 ## 工作原理
 

@@ -1,14 +1,19 @@
 {
   "name": "@dsh-external/dsh-session-lock",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DeepSeek Harness 会话互斥锁：Web Locks 跨标签页互斥，防止多页面并发编辑同一会话导致草稿互相覆盖，支持一键接管",
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
   "files": [
-    "lib",
+    "lib/client.js",
+    "lib/client.js.map",
+    "lib/index.js",
+    "lib/index.js.map",
+    "lib/types",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "license": "BSD-3-Clause",
   "repository": {
