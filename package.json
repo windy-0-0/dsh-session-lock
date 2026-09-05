@@ -13,7 +13,7 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mac/dsh-session-lock.git"
+    "url": "git+https://github.com/windy-0-0/dsh-session-lock.git"
   },
   "keywords": [
     "deepseek-harness",
