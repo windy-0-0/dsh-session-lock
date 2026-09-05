@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="240" viewBox="0 0 860 240" font-family="-apple-system, 'SF Pro Text', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <title>dsh-session-lock banner — light &amp; dark themes</title>
+  <!-- 浅色主题 -->
+  <rect x="0" y="0" width="420" height="240" rx="12" fill="#ffffff"/>
+  <text x="20" y="26" font-size="12" fill="#888">Light theme</text>
+  <!-- 输入框上方横幅（浅色） -->
+  <rect x="16" y="42" width="388" height="52" rx="9" fill="#fff7e0" stroke="#d9a400" stroke-width="1.2"/>
+  <text x="34" y="64" font-size="13" fill="#1a1a1a">⚠ 该会话已在另一标签页打开——本页的输入</text>
+  <text x="34" y="82" font-size="13" fill="#1a1a1a">不会同步且可能被覆盖。</text>
+  <rect x="306" y="56" width="84" height="24" rx="6" fill="none" stroke="#8a8a8a"/>
+  <text x="348" y="72" font-size="12" fill="#1a1a1a" text-anchor="middle">接管此会话</text>
+  <!-- 输入框示意 -->
+  <rect x="16" y="104" width="388" height="46" rx="9" fill="#f2f3f5" stroke="#d0d2d6"/>
+  <text x="30" y="132" font-size="13" fill="#999">输入消息…</text>
+  <!-- 锁状态小字 -->
+  <text x="20" y="170" font-size="11" fill="#666">🔒 本页独占编辑（持锁页的极低调提示）</text>
+  <!-- 标签示意 -->
+  <rect x="16" y="186" width="120" height="34" rx="8" fill="#f2f3f5"/>
+  <text x="30" y="208" font-size="12" fill="#444">Tab A（持锁）</text>
+  <rect x="146" y="186" width="120" height="34" rx="8" fill="#fff7e0" stroke="#d9a400"/>
+  <text x="160" y="208" font-size="12" fill="#7a5c00">Tab B（等待）</text>
+
+  <!-- 深色主题 -->
+  <rect x="430" y="0" width="430" height="240" rx="12" fill="#1e1f22"/>
+  <text x="450" y="26" font-size="12" fill="#999">Dark theme</text>
+  <rect x="446" y="42" width="398" height="52" rx="9" fill="rgba(217,164,0,0.13)" stroke="#d9a400" stroke-width="1.2"/>
+  <text x="464" y="64" font-size="13" fill="#e8e8e8">⚠ 该会话已在另一标签页打开——本页的输入</text>
+  <text x="464" y="82" font-size="13" fill="#e8e8e8">不会同步且可能被覆盖。</text>
+  <rect x="736" y="56" width="94" height="24" rx="6" fill="none" stroke="#b0b0b0"/>
+  <text x="783" y="72" font-size="12" fill="#e8e8e8" text-anchor="middle">接管此会话</text>
+  <rect x="446" y="104" width="398" height="46" rx="9" fill="#2a2b2e" stroke="#43454a"/>
+  <text x="460" y="132" font-size="13" fill="#777">输入消息…</text>
+  <text x="450" y="170" font-size="11" fill="#aaa">🔒 本页独占编辑（持锁页的极低调提示）</text>
+  <rect x="446" y="186" width="130" height="34" rx="8" fill="#2a2b2e"/>
+  <text x="460" y="208" font-size="12" fill="#ccc">Tab A（持锁）</text>
+  <rect x="586" y="186" width="130" height="34" rx="8" fill="rgba(217,164,0,0.13)" stroke="#d9a400"/>
+  <text x="600" y="208" font-size="12" fill="#e5c15e">Tab B（等待）</text>
+</svg>
