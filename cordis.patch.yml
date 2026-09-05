@@ -1,0 +1,4 @@
+# Mounts @dsh-external/dsh-session-lock into the profile that installed it.
+- insert:
+    - id: session-lock
+      name: "@dsh-external/dsh-session-lock"
