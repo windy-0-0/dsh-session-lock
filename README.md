@@ -1,4 +1,6 @@
-# @dsh-external/dsh-session-lock
+# dsh-session-lock
+
+[English](README_EN.md) | 中文
 
 DeepSeek Harness（DSH）**会话互斥锁**：用浏览器原生 **Web Locks API** 实现跨标签页互斥，防止同一会话被多个标签页/窗口并发编辑——这是 0.1.2 及更早版本中"输入框内容被自动删除、出现乱文字"（多页面草稿互相覆盖）的根治插件。
 
@@ -15,10 +17,10 @@ DeepSeek Harness（DSH）**会话互斥锁**：用浏览器原生 **Web Locks AP
 ## 安装
 
 ```bash
-npm install @dsh-external/dsh-session-lock
+npm install dsh-session-lock
 ```
 
-然后把它加入你的 profile bundles（`dsh.plugin add @dsh-external/dsh-session-lock`，或手动把包名加进 profile `package.json` 的 `dsh.profile.bundles` 数组），重启 dsh 生效。
+然后把它加入你的 profile bundles（`dsh.plugin add dsh-session-lock`，或手动把包名加进 profile `package.json` 的 `dsh.profile.bundles` 数组），重启 dsh 生效。
 
 如果使用 dsh-super-injector 生态（免重启热装配），在其环境中调用 `dev_inject_plugin <本插件目录>` 即可。
 

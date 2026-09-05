@@ -1,5 +1,5 @@
 /**
- * @dsh-external/dsh-session-lock — client half.
+ * dsh-session-lock — client half.
  *
  * 会话互斥锁（跨标签页）：
  *   - 用浏览器原生 Web Locks API 对每个会话名加互斥锁；
@@ -227,5 +227,5 @@ function SessionLockDock({ sessionId }: { sessionId?: string }): React.ReactElem
 export function apply(ctx: ClientContext): void {
   ctx.effect(() => ctx.slots.inject('conversation.input.dock', () =>
     ctx.slots.register({ name: "conversation.input.dock", id: "dsh-session-lock", order: 25, label: () => "会话锁" }, SessionLockDock),
-  ), '@dsh-external/dsh-session-lock: input dock')
+  ), 'dsh-session-lock: input dock')
 }
